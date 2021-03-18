@@ -58,7 +58,7 @@ namespace prjCovidVac {
                 Console.Write("Patient: " + (x + 1) + " Enter Patient Allergies: ");
                 allergies = Console.ReadLine();
 
-                Console.Write("Patient: " + (x + 1) + " Enter if Patient had covid: ");
+                Console.Write("Patient: " + (x + 1) + " Enter if Patient had covid (true/false: ");
                 hadcovid = Convert.ToBoolean(Console.ReadLine());
 
                 Console.Write("Patient: " + (x + 1) + " Enter Patient Vaccine: ");
