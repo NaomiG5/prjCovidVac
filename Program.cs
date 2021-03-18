@@ -3,9 +3,15 @@
 namespace prjCovidVac {
     class Program {
         static void Main(string[] args) {
+
             capture cp = new capture();
-            info i = new info();
-            cp.getInfo();
+            PrintOut p = new PrintOut();
+            cp.getHospitalInfo();
+            cp.getPatientInfo();
+            p.printHospital();
+            p.printPatients();
+           ;
         }
+        
     }
 }

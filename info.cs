@@ -9,13 +9,13 @@ namespace prjCovidVac {
         #region gets and sets for the main vars
         private static String strHospital_Name;
         private static String strAddress;
-        private static bool bType;//private or public hospital
-        private static char cProvince;
+        private static string bType;//private or public hospital
+        private static string cProvince;
 
         public string Hospital_Name { get => strHospital_Name; set => strHospital_Name = value; }
         public string Address { get => strAddress; set => strAddress = value; }
-        public bool Type { get => bType; set => bType = value; }
-        public char Province { get => cProvince; set => cProvince = value; }
+        public string Type { get => bType; set => bType = value; }
+        public string Province { get => cProvince; set => cProvince = value; }
 
         #endregion
 
