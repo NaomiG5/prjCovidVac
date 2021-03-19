@@ -65,6 +65,8 @@ namespace prjCovidVac {
                 vac = Console.ReadLine();
 
                 i.addPerson(iD, medicalAid, name, surname, refDr, bloodType, allergies, hadcovid, vac);
+
+                // this is new code
             }
 
 
