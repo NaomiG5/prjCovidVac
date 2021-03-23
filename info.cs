@@ -54,30 +54,36 @@ namespace prjCovidVac {
         }
         #endregion
 
+        #endregion
+
+        #region arrays 
         private static String[] ID_Number;
         private static String[] MedicalAid;
         private static String[] Name;
         private static String[] Surname;
         private static String[] RefDr;
-        private static char[] BloodType;
+        private static Char[] BloodType;
         private static String[] Allergies;
         private static Boolean[] CovidPostive;
         private static String[] Vaccine;
+        #endregion
 
-        public void setArray(int num) {
-            ID_Number = new string[num];
-            MedicalAid = new string[num];
-            Name = new string[num];
-            Surname = new string[num];
-            RefDr = new string[num];
-            BloodType = new char[num];
-            Allergies = new string[num];
+        #region Set array size
+        public void setArray(int num)
+        {
+            ID_Number = new String[num];
+            MedicalAid = new String[num];
+            Name = new String[num];
+            Surname = new String[num];
+            RefDr = new String[num];
+            BloodType = new Char[num];
+            Allergies = new String[num];
             CovidPostive = new Boolean[num];
-            Vaccine = new string[num];
+            Vaccine = new String[num];
 
             iSizeArray = num;
-
         }
+        #endregion
 
         public void addPerson(String strID, String strMedic, String strName,
             String strSurname,
@@ -142,6 +148,7 @@ namespace prjCovidVac {
         }
         #endregion
     }
+
 }
 
 
