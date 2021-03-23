@@ -7,15 +7,52 @@ namespace prjCovidVac {
         private static int iCounter = 0;
 
 
-        private static String strHospital_Name;
-        private static String strAddress;
-        private static bool bType; //privat or public hospital
-        private static char cProvince;
+        #region gets and sets for the main vars
+        private static String Hospital_Name;
+        private static String Address;
+        private static String Type;//private or public hospital
+        private static String Province;
 
-        public string Hospital_Name {get => strHospital_Name; set => Hospital_Name = value;}
-        public string Address{get => strAddress; set => Address = value;}
-        public Boolean Type{get => bType; set => Type = value;}
-        public char Province{get => cProvince; set => Province = value;}
+        public void setHospital_Name(String hospitalName)
+        {
+            Hospital_Name = hospitalName;
+        }
+
+        public String getHospital_Name()
+        {
+            return Hospital_Name;
+        }
+
+        public void setAddress(String address)
+        {
+            Address = address;
+        }
+
+        public String getAddress()
+        {
+            return Address;
+        }
+
+        public void setType(String hosType)
+        {
+            Type = hosType;
+        }
+
+        public String getType()
+        {
+            return Type;
+        }
+
+        public void setProvince(String province)
+        {
+            Province = province;
+        }
+
+        public String getProvince()
+        {
+            return Province;
+        }
+        #endregion
 
         private static String[] ID_Number;
         private static String[] MedicalAid;
@@ -60,9 +97,51 @@ namespace prjCovidVac {
 
             iCounter++;
         }
-        public int size() {
+        public int size()
+        {
             return iSizeArray;
         }
+
+        #region Get values
+        public String getIDNumber(int x)
+        {
+            return ID_Number[x];
+        }
+
+        public string getMedicalAid(int x)
+        {
+            return MedicalAid[x];
+        }
+        public string getName(int x)
+        {
+            return Name[x];
+        }
+        public string getSurname(int x)
+        {
+            return Surname[x];
+        }
+        public string getRefDr(int x)
+        {
+            return RefDr[x];
+        }
+        public char getBloodType(int x)
+        {
+            return BloodType[x];
+        }
+        public string getAllergies(int x)
+        {
+            return Allergies[x];
+        }
+        public Boolean getCovidPostive(int x)
+        {
+            return CovidPostive[x];
+        }
+        public String getVaccine(int x)
+        {
+            return Vaccine[x];
+        }
+        #endregion
     }
 }
+
 
