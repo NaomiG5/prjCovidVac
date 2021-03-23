@@ -54,7 +54,6 @@ namespace prjCovidVac {
         }
         #endregion
 
-        #endregion
 
         #region arrays 
         private static String[] ID_Number;
